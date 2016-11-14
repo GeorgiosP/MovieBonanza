@@ -7,7 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+/*
+ * Assignment 3 Movie Bonanaza
+ * Georgios Psarakis
+ * 200289922 
+ */
 namespace MovieBonanza
 {
     public partial class OrderForm : Form

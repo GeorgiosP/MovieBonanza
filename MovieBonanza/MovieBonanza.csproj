@@ -75,6 +75,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -90,26 +91,27 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\CedarRapids.jpg" />
-    <EmbeddedResource Include="Resources\DeathRace2.jpg" />
-    <EmbeddedResource Include="Resources\Footloose.jpg" />
-    <EmbeddedResource Include="Resources\GnomeoAndJuliet.jpg" />
-    <EmbeddedResource Include="Resources\IAmNumberFour.jpg" />
-    <EmbeddedResource Include="Resources\JustGoWithIt.jpg" />
+    <None Include="Resources\WaitingForForever.jpg" />
+    <None Include="Resources\TheWayBack.jpg" />
+    <None Include="Resources\TheRoommate.jpg" />
+    <None Include="Resources\TheRite.jpg" />
+    <None Include="Resources\TheOtherWoman.jpg" />
+    <None Include="Resources\TheMechanic.jpg" />
+    <None Include="Resources\TheGreenHornet.jpg" />
+    <None Include="Resources\TheEagle.jpg" />
+    <None Include="Resources\TheDilemma.jpg" />
+    <None Include="Resources\TheCompanyMen.jpg" />
+    <None Include="Resources\SeasonOfTheWitch.jpg" />
+    <None Include="Resources\Sanctum.jpg" />
+    <None Include="Resources\RealSteel.jpg" />
+    <None Include="Resources\NoStringsAttached.jpg" />
+    <None Include="Resources\JustGoWithIt.jpg" />
+    <None Include="Resources\IAmNumberFour.jpg" />
+    <None Include="Resources\GnomeoAndJuliet.jpg" />
+    <None Include="Resources\Footloose.jpg" />
+    <None Include="Resources\DeathRace2.jpg" />
+    <None Include="Resources\CedarRapids.jpg" />
     <Content Include="NoStringsAttached.jpg" />
-    <EmbeddedResource Include="Resources\RealSteel.jpg" />
-    <EmbeddedResource Include="Resources\Sanctum.jpg" />
-    <EmbeddedResource Include="Resources\SeasonOfTheWitch.jpg" />
-    <EmbeddedResource Include="Resources\TheCompanyMen.jpg" />
-    <EmbeddedResource Include="Resources\TheDilemma.jpg" />
-    <EmbeddedResource Include="Resources\TheEagle.jpg" />
-    <EmbeddedResource Include="Resources\TheGreenHornet.jpg" />
-    <EmbeddedResource Include="Resources\TheMechanic.jpg" />
-    <EmbeddedResource Include="Resources\TheOtherWoman.jpg" />
-    <EmbeddedResource Include="Resources\TheRite.jpg" />
-    <EmbeddedResource Include="Resources\TheRoommate.jpg" />
-    <EmbeddedResource Include="Resources\TheWayBack.jpg" />
-    <EmbeddedResource Include="Resources\WaitingForForever.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

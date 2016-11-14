@@ -3,14 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+/*
+ * Assignment 3 Movie Bonanaza
+ * Georgios Psarakis
+ * 200289922 
+ */
 namespace MovieBonanza
 {
 
     static class Program
     {
         //Create an instance of movies on program start up 
-        public static Movies info = new Movies();
+        public static Movies SelectionInfo = new Movies();
 
         /// <summary>
         /// The main entry point for the application.

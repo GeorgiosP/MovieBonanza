@@ -50,7 +50,7 @@
             this.SelectionListBox.FormattingEnabled = true;
             this.SelectionListBox.ItemHeight = 26;
             this.SelectionListBox.Items.AddRange(new object[] {
-            "Season of the Witch",
+            "Season Of The Witch",
             "The Green Hornet",
             "The Dilemma",
             "Death Race 2",
@@ -58,22 +58,23 @@
             "No Strings Attached",
             "The Way Back",
             "The Mechanic",
-            "The Rite ",
+            "The Rite",
             "Sanctum",
             "The Other Woman",
             "The Roommate",
-            "Waiting for Forever",
+            "Waiting For Forever",
             "Cedar Rapids",
-            "Gnomeo and Juliet",
+            "Gnomeo And Juliet",
             "Just Go With It",
             "The Eagle",
             "I Am Number Four",
             "Footloose",
             "Real Steel"});
-            this.SelectionListBox.Location = new System.Drawing.Point(12, 102);
+            this.SelectionListBox.Location = new System.Drawing.Point(18, 99);
             this.SelectionListBox.Name = "SelectionListBox";
             this.SelectionListBox.Size = new System.Drawing.Size(273, 290);
             this.SelectionListBox.TabIndex = 0;
+            this.SelectionListBox.SelectedIndexChanged += new System.EventHandler(this.SelectionListBox_SelectedIndexChanged);
             // 
             // SelectionGroupBox
             // 
@@ -85,7 +86,7 @@
             this.SelectionGroupBox.Controls.Add(this.TitleTextBox);
             this.SelectionGroupBox.Controls.Add(this.MoviePictureBox);
             this.SelectionGroupBox.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SelectionGroupBox.Location = new System.Drawing.Point(291, 102);
+            this.SelectionGroupBox.Location = new System.Drawing.Point(297, 99);
             this.SelectionGroupBox.Name = "SelectionGroupBox";
             this.SelectionGroupBox.Size = new System.Drawing.Size(470, 272);
             this.SelectionGroupBox.TabIndex = 1;
@@ -151,13 +152,14 @@
             this.MoviePictureBox.Location = new System.Drawing.Point(18, 34);
             this.MoviePictureBox.Name = "MoviePictureBox";
             this.MoviePictureBox.Size = new System.Drawing.Size(171, 222);
+            this.MoviePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.MoviePictureBox.TabIndex = 0;
             this.MoviePictureBox.TabStop = false;
             // 
             // SelectionLabel
             // 
             this.SelectionLabel.AutoSize = true;
-            this.SelectionLabel.Location = new System.Drawing.Point(37, 72);
+            this.SelectionLabel.Location = new System.Drawing.Point(43, 69);
             this.SelectionLabel.Name = "SelectionLabel";
             this.SelectionLabel.Size = new System.Drawing.Size(168, 27);
             this.SelectionLabel.TabIndex = 2;
@@ -175,16 +177,17 @@
             // 
             // NextButton
             // 
-            this.NextButton.Location = new System.Drawing.Point(650, 408);
+            this.NextButton.Location = new System.Drawing.Point(656, 405);
             this.NextButton.Name = "NextButton";
             this.NextButton.Size = new System.Drawing.Size(111, 37);
             this.NextButton.TabIndex = 4;
             this.NextButton.Text = "Next";
             this.NextButton.UseVisualStyleBackColor = true;
+            this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
             // 
             // CancelButton
             // 
-            this.CancelButton.Location = new System.Drawing.Point(533, 408);
+            this.CancelButton.Location = new System.Drawing.Point(539, 405);
             this.CancelButton.Name = "CancelButton";
             this.CancelButton.Size = new System.Drawing.Size(111, 37);
             this.CancelButton.TabIndex = 5;
@@ -196,6 +199,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 26F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(782, 457);
             this.Controls.Add(this.CancelButton);
             this.Controls.Add(this.NextButton);

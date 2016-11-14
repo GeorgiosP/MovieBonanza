@@ -3,7 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+/*
+ * Assignment 3 Movie Bonanaza
+ * Georgios Psarakis
+ * 200289922 
+ */
 namespace MovieBonanza
 {
     class Movies
@@ -27,10 +31,10 @@ namespace MovieBonanza
         public string Cost { get; set; }
 
         /*Movie Total after all expenses */
-        public string GrandTotal { get; set; }
+        public string Total { get; set; }
 
         /*Movie poster picture*/
-        public System.Drawing.Bitmap Picture { get; set; }
+        public System.Drawing.Bitmap Poster { get; set; }
 
 
     }
