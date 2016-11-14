@@ -12,6 +12,7 @@ using System.Windows.Forms;
  * Georgios Psarakis
  * November 8th 2016
  * 200289922 
+ * Steraming movie service with the option to order the DVD 
  */
 namespace MovieBonanza
 {

@@ -72,7 +72,7 @@
             this.CheckoutLabel.Name = "CheckoutLabel";
             this.CheckoutLabel.Size = new System.Drawing.Size(412, 23);
             this.CheckoutLabel.TabIndex = 3;
-            this.CheckoutLabel.Text = "if everything checks out click ok to start ";
+            this.CheckoutLabel.Text = "If everything checks out click ok to start ";
             // 
             // StreamForm
             // 
