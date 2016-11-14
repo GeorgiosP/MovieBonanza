@@ -28,10 +28,11 @@ namespace MovieBonanza
 
         private void SelectionListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
+            NextButton.Enabled = true;
             TitleTextBox.Text = Convert.ToString(SelectionListBox.Text);
             CheckSelection();
-            setPoster();
-            saveSelection();
+            SetPoster();
+            SaveSelection();
         }
         private void NextButton_Click(object sender, EventArgs e)
         {
@@ -118,92 +119,126 @@ namespace MovieBonanza
          * This will Check the Title and Set the correct poster based on the title in the 
          * MoviePictureBox 
          */
-        public void setPoster()
+        public void SetPoster()
         {
             if (TitleTextBox.Text == "Season Of The Witch")
             {
                 MoviePictureBox.Image = Properties.Resources.SeasonOfTheWitch;
+                Program.SelectionInfo.Poster = Properties.Resources.SeasonOfTheWitch;
             }
             else if (TitleTextBox.Text == "The Green Hornet")
             {
                 MoviePictureBox.Image = Properties.Resources.TheGreenHornet;
+                Program.SelectionInfo.Poster = Properties.Resources.TheGreenHornet;
             }
             else if (TitleTextBox.Text == "The Dilemma")
             {
                 MoviePictureBox.Image = Properties.Resources.TheDilemma;
+                Program.SelectionInfo.Poster = Properties.Resources.TheDilemma;
             }
             else if (TitleTextBox.Text == "Death Race 2")
             {
                 MoviePictureBox.Image = Properties.Resources.DeathRace2;
+                Program.SelectionInfo.Poster = Properties.Resources.DeathRace2;
             }
             else if (TitleTextBox.Text == "The Company Men")
             {
                 MoviePictureBox.Image = Properties.Resources.TheCompanyMen;
+                Program.SelectionInfo.Poster = Properties.Resources.TheCompanyMen;
             }
             else if (TitleTextBox.Text == "No Strings Attached")
             {
                 MoviePictureBox.Image = Properties.Resources.NoStringsAttached;
+                Program.SelectionInfo.Poster = Properties.Resources.NoStringsAttached;
             }
             else if (TitleTextBox.Text == "The Way Back")
             {
                 MoviePictureBox.Image = Properties.Resources.TheWayBack;
+                Program.SelectionInfo.Poster = Properties.Resources.TheWayBack;
             }
             else if (TitleTextBox.Text == "The Mechanic")
             {
                 MoviePictureBox.Image = Properties.Resources.TheMechanic;
+                Program.SelectionInfo.Poster = Properties.Resources.TheMechanic;
             }
             else if (TitleTextBox.Text == "The Rite")
             {
                 MoviePictureBox.Image = Properties.Resources.TheRite;
+                Program.SelectionInfo.Poster = Properties.Resources.TheRite;
             }
             else if (TitleTextBox.Text == "Sanctum")
             {
                 MoviePictureBox.Image = Properties.Resources.Sanctum;
+                Program.SelectionInfo.Poster = Properties.Resources.Sanctum;
             }
             else if (TitleTextBox.Text == "The Other Woman")
             {
                 MoviePictureBox.Image = Properties.Resources.TheOtherWoman;
+                Program.SelectionInfo.Poster = Properties.Resources.TheOtherWoman;
             }
             else if (TitleTextBox.Text == "The Roommate")
             {
                 MoviePictureBox.Image = Properties.Resources.TheRoommate;
+                Program.SelectionInfo.Poster = Properties.Resources.TheRoommate;
             }
             else if (TitleTextBox.Text == "Waiting For Forever")
             {
                 MoviePictureBox.Image = Properties.Resources.WaitingForForever;
+                Program.SelectionInfo.Poster = Properties.Resources.WaitingForForever;
             }
             else if (TitleTextBox.Text == "Cedar Rapids")
             {
                 MoviePictureBox.Image = Properties.Resources.CedarRapids;
+                Program.SelectionInfo.Poster = Properties.Resources.CedarRapids;
             }
             else if (TitleTextBox.Text == "Gnomeo And Juliet")
             {
                 MoviePictureBox.Image = Properties.Resources.GnomeoAndJuliet;
+                Program.SelectionInfo.Poster = Properties.Resources.GnomeoAndJuliet;
             }
             else if (TitleTextBox.Text == "Just Go With It")
             {
                 MoviePictureBox.Image = Properties.Resources.JustGoWithIt;
+                Program.SelectionInfo.Poster = Properties.Resources.JustGoWithIt;
             }
             else if (TitleTextBox.Text == "The Eagle")
             {
                 MoviePictureBox.Image = Properties.Resources.TheEagle;
+                Program.SelectionInfo.Poster = Properties.Resources.TheEagle;
             }
             else if (TitleTextBox.Text == "I am Number Four")
             {
                 MoviePictureBox.Image = Properties.Resources.IAmNumberFour;
+                Program.SelectionInfo.Poster = Properties.Resources.IAmNumberFour;
             }
             else if (TitleTextBox.Text == "Footloose")
             {
                 MoviePictureBox.Image = Properties.Resources.Footloose;
+                Program.SelectionInfo.Poster = Properties.Resources.Footloose;
             }
-            else MoviePictureBox.Image = Properties.Resources.RealSteel;
+            else
+            {  MoviePictureBox.Image = Properties.Resources.RealSteel;
+                Program.SelectionInfo.Poster = Properties.Resources.RealSteel;
+            }
+
 
         }
-        private void saveSelection()
+        private void SaveSelection()
         {
             Program.SelectionInfo.Title = TitleTextBox.Text;
             Program.SelectionInfo.Cost = CostTextBox.Text.TrimStart('$');
             Program.SelectionInfo.Genre = GenreTextBox.Text;
+           
+            
+        }
+        public void PreviousFormSelections()
+        {
+            TitleTextBox.Text = Program.SelectionInfo.Title;
+            GenreTextBox.Text = Program.SelectionInfo.Genre;
+            CostTextBox.Text = Program.SelectionInfo.Cost;
+
+
+            SelectionListBox.Text = TitleTextBox.Text;
         }
 
 

@@ -177,6 +177,7 @@
             // 
             // NextButton
             // 
+            this.NextButton.Enabled = false;
             this.NextButton.Location = new System.Drawing.Point(656, 405);
             this.NextButton.Name = "NextButton";
             this.NextButton.Size = new System.Drawing.Size(111, 37);
