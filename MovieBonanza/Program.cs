@@ -6,6 +6,7 @@ using System.Windows.Forms;
 /*
  * Assignment 3 Movie Bonanaza
  * Georgios Psarakis
+ * November 8th 2016
  * 200289922 
  */
 namespace MovieBonanza
@@ -24,7 +25,7 @@ namespace MovieBonanza
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SelectionForm());
+            Application.Run(new SplashScreen());
         }
     }
 }

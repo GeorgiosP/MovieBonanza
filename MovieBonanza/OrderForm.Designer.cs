@@ -37,10 +37,10 @@
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.SelectedMovieGroupBox = new System.Windows.Forms.GroupBox();
             this.MoviePictureBox = new System.Windows.Forms.PictureBox();
-            this.TitleTextBox = new System.Windows.Forms.TextBox();
             this.GenreTextBox = new System.Windows.Forms.TextBox();
-            this.GenreLabel = new System.Windows.Forms.Label();
+            this.TitleTextBox = new System.Windows.Forms.TextBox();
             this.TitleLabel = new System.Windows.Forms.Label();
+            this.GenreLabel = new System.Windows.Forms.Label();
             this.OrderGroupBox = new System.Windows.Forms.GroupBox();
             this.DVDCheckBox = new System.Windows.Forms.CheckBox();
             this.TotalLabel = new System.Windows.Forms.Label();
@@ -48,11 +48,11 @@
             this.SalesTaxTextBox = new System.Windows.Forms.TextBox();
             this.TotalTextBox = new System.Windows.Forms.TextBox();
             this.SubTotalTextBox = new System.Windows.Forms.TextBox();
-            this.CostTextBox = new System.Windows.Forms.TextBox();
             this.DVDTextBox = new System.Windows.Forms.TextBox();
+            this.CostTextBox = new System.Windows.Forms.TextBox();
             this.CostLabel = new System.Windows.Forms.Label();
-            this.DVDLabel = new System.Windows.Forms.Label();
             this.SubTotalLabel = new System.Windows.Forms.Label();
+            this.DVDLabel = new System.Windows.Forms.Label();
             this.BackButton = new System.Windows.Forms.Button();
             this.StreamButton = new System.Windows.Forms.Button();
             this.CancelButton = new System.Windows.Forms.Button();
@@ -94,14 +94,16 @@
             // streamToolStripMenuItem
             // 
             this.streamToolStripMenuItem.Name = "streamToolStripMenuItem";
-            this.streamToolStripMenuItem.Size = new System.Drawing.Size(131, 26);
+            this.streamToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.streamToolStripMenuItem.Text = "Stream";
+            this.streamToolStripMenuItem.Click += new System.EventHandler(this.streamToolStripMenuItem_Click);
             // 
             // cancelToolStripMenuItem
             // 
             this.cancelToolStripMenuItem.Name = "cancelToolStripMenuItem";
-            this.cancelToolStripMenuItem.Size = new System.Drawing.Size(131, 26);
+            this.cancelToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.cancelToolStripMenuItem.Text = "Cancel";
+            this.cancelToolStripMenuItem.Click += new System.EventHandler(this.cancelToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
@@ -114,7 +116,7 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(125, 26);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
@@ -142,14 +144,6 @@
             this.MoviePictureBox.TabIndex = 7;
             this.MoviePictureBox.TabStop = false;
             // 
-            // TitleTextBox
-            // 
-            this.TitleTextBox.Location = new System.Drawing.Point(24, 76);
-            this.TitleTextBox.Name = "TitleTextBox";
-            this.TitleTextBox.ReadOnly = true;
-            this.TitleTextBox.Size = new System.Drawing.Size(227, 31);
-            this.TitleTextBox.TabIndex = 6;
-            // 
             // GenreTextBox
             // 
             this.GenreTextBox.Location = new System.Drawing.Point(24, 136);
@@ -158,14 +152,13 @@
             this.GenreTextBox.Size = new System.Drawing.Size(227, 31);
             this.GenreTextBox.TabIndex = 5;
             // 
-            // GenreLabel
+            // TitleTextBox
             // 
-            this.GenreLabel.AutoSize = true;
-            this.GenreLabel.Location = new System.Drawing.Point(20, 110);
-            this.GenreLabel.Name = "GenreLabel";
-            this.GenreLabel.Size = new System.Drawing.Size(69, 23);
-            this.GenreLabel.TabIndex = 4;
-            this.GenreLabel.Text = "Genre";
+            this.TitleTextBox.Location = new System.Drawing.Point(24, 76);
+            this.TitleTextBox.Name = "TitleTextBox";
+            this.TitleTextBox.ReadOnly = true;
+            this.TitleTextBox.Size = new System.Drawing.Size(227, 31);
+            this.TitleTextBox.TabIndex = 6;
             // 
             // TitleLabel
             // 
@@ -175,6 +168,15 @@
             this.TitleLabel.Size = new System.Drawing.Size(54, 23);
             this.TitleLabel.TabIndex = 3;
             this.TitleLabel.Text = "Title";
+            // 
+            // GenreLabel
+            // 
+            this.GenreLabel.AutoSize = true;
+            this.GenreLabel.Location = new System.Drawing.Point(20, 110);
+            this.GenreLabel.Name = "GenreLabel";
+            this.GenreLabel.Size = new System.Drawing.Size(69, 23);
+            this.GenreLabel.TabIndex = 4;
+            this.GenreLabel.Text = "Genre";
             // 
             // OrderGroupBox
             // 
@@ -253,14 +255,6 @@
             this.SubTotalTextBox.Size = new System.Drawing.Size(180, 31);
             this.SubTotalTextBox.TabIndex = 10;
             // 
-            // CostTextBox
-            // 
-            this.CostTextBox.Location = new System.Drawing.Point(245, 60);
-            this.CostTextBox.Name = "CostTextBox";
-            this.CostTextBox.ReadOnly = true;
-            this.CostTextBox.Size = new System.Drawing.Size(180, 31);
-            this.CostTextBox.TabIndex = 9;
-            // 
             // DVDTextBox
             // 
             this.DVDTextBox.Location = new System.Drawing.Point(245, 99);
@@ -270,6 +264,14 @@
             this.DVDTextBox.TabIndex = 8;
             this.DVDTextBox.Text = "$10.00";
             this.DVDTextBox.Visible = false;
+            // 
+            // CostTextBox
+            // 
+            this.CostTextBox.Location = new System.Drawing.Point(245, 60);
+            this.CostTextBox.Name = "CostTextBox";
+            this.CostTextBox.ReadOnly = true;
+            this.CostTextBox.Size = new System.Drawing.Size(180, 31);
+            this.CostTextBox.TabIndex = 9;
             // 
             // CostLabel
             // 
@@ -281,6 +283,16 @@
             this.CostLabel.TabIndex = 5;
             this.CostLabel.Text = "Cost:";
             // 
+            // SubTotalLabel
+            // 
+            this.SubTotalLabel.AutoSize = true;
+            this.SubTotalLabel.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SubTotalLabel.Location = new System.Drawing.Point(117, 146);
+            this.SubTotalLabel.Name = "SubTotalLabel";
+            this.SubTotalLabel.Size = new System.Drawing.Size(102, 23);
+            this.SubTotalLabel.TabIndex = 7;
+            this.SubTotalLabel.Text = "Sub-Total";
+            // 
             // DVDLabel
             // 
             this.DVDLabel.AutoSize = true;
@@ -291,16 +303,6 @@
             this.DVDLabel.TabIndex = 6;
             this.DVDLabel.Text = "DVD Cost:";
             this.DVDLabel.Visible = false;
-            // 
-            // SubTotalLabel
-            // 
-            this.SubTotalLabel.AutoSize = true;
-            this.SubTotalLabel.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SubTotalLabel.Location = new System.Drawing.Point(117, 146);
-            this.SubTotalLabel.Name = "SubTotalLabel";
-            this.SubTotalLabel.Size = new System.Drawing.Size(102, 23);
-            this.SubTotalLabel.TabIndex = 7;
-            this.SubTotalLabel.Text = "Sub-Total";
             // 
             // BackButton
             // 
@@ -322,6 +324,7 @@
             this.StreamButton.TabIndex = 4;
             this.StreamButton.Text = "Stream";
             this.StreamButton.UseVisualStyleBackColor = true;
+            this.StreamButton.Click += new System.EventHandler(this.StreamButton_Click);
             // 
             // CancelButton
             // 

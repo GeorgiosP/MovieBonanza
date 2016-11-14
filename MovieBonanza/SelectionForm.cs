@@ -10,6 +10,7 @@ using System.Windows.Forms;
 /*
  * Assignment 3 Movie Bonanaza
  * Georgios Psarakis
+ * November 8th 2016
  * 200289922 
  */
 namespace MovieBonanza
@@ -117,7 +118,7 @@ namespace MovieBonanza
 
         /*
          * This will Check the Title and Set the correct poster based on the title in the 
-         * MoviePictureBox 
+         * TitleTextBox and also save it to the global Poster Movies class.
          */
         public void SetPoster()
         {
@@ -223,6 +224,10 @@ namespace MovieBonanza
 
 
         }
+        /*
+         * This will save the selections a user has made 
+         * for the title cost and genre. 
+         */
         private void SaveSelection()
         {
             Program.SelectionInfo.Title = TitleTextBox.Text;
@@ -231,6 +236,10 @@ namespace MovieBonanza
            
             
         }
+        /*
+         * This will be used for calling back to this form from 
+         * OrderFrom so the data is saved. 
+         */
         public void PreviousFormSelections()
         {
             TitleTextBox.Text = Program.SelectionInfo.Title;

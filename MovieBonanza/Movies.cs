@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 /*
  * Assignment 3 Movie Bonanaza
  * Georgios Psarakis
+ * November 8th 2016
  * 200289922 
  */
 namespace MovieBonanza
