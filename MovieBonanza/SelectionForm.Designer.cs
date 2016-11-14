@@ -54,11 +54,12 @@
             "The Green Hornet",
             "The Dilemma",
             "Death Race 2",
-            "Company Men",
+            "The Company Men",
             "No Strings Attached",
             "The Way Back",
             "The Mechanic",
-            "The Rite Horror Sanctum",
+            "The Rite ",
+            "Sanctum",
             "The Other Woman",
             "The Roommate",
             "Waiting for Forever",
@@ -69,9 +70,9 @@
             "I Am Number Four",
             "Footloose",
             "Real Steel"});
-            this.SelectionListBox.Location = new System.Drawing.Point(42, 102);
+            this.SelectionListBox.Location = new System.Drawing.Point(12, 102);
             this.SelectionListBox.Name = "SelectionListBox";
-            this.SelectionListBox.Size = new System.Drawing.Size(227, 290);
+            this.SelectionListBox.Size = new System.Drawing.Size(273, 290);
             this.SelectionListBox.TabIndex = 0;
             // 
             // SelectionGroupBox
@@ -84,7 +85,7 @@
             this.SelectionGroupBox.Controls.Add(this.TitleTextBox);
             this.SelectionGroupBox.Controls.Add(this.MoviePictureBox);
             this.SelectionGroupBox.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SelectionGroupBox.Location = new System.Drawing.Point(275, 102);
+            this.SelectionGroupBox.Location = new System.Drawing.Point(291, 102);
             this.SelectionGroupBox.Name = "SelectionGroupBox";
             this.SelectionGroupBox.Size = new System.Drawing.Size(470, 272);
             this.SelectionGroupBox.TabIndex = 1;
@@ -95,7 +96,7 @@
             // 
             this.CostLabel.AutoSize = true;
             this.CostLabel.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CostLabel.Location = new System.Drawing.Point(258, 172);
+            this.CostLabel.Location = new System.Drawing.Point(253, 172);
             this.CostLabel.Name = "CostLabel";
             this.CostLabel.Size = new System.Drawing.Size(54, 23);
             this.CostLabel.TabIndex = 6;
@@ -105,7 +106,7 @@
             // 
             this.GenreLabel.AutoSize = true;
             this.GenreLabel.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GenreLabel.Location = new System.Drawing.Point(253, 107);
+            this.GenreLabel.Location = new System.Drawing.Point(249, 107);
             this.GenreLabel.Name = "GenreLabel";
             this.GenreLabel.Size = new System.Drawing.Size(69, 23);
             this.GenreLabel.TabIndex = 5;
@@ -123,26 +124,26 @@
             // 
             // CostTextBox
             // 
-            this.CostTextBox.Location = new System.Drawing.Point(253, 202);
+            this.CostTextBox.Location = new System.Drawing.Point(242, 198);
             this.CostTextBox.Name = "CostTextBox";
             this.CostTextBox.ReadOnly = true;
-            this.CostTextBox.Size = new System.Drawing.Size(178, 31);
+            this.CostTextBox.Size = new System.Drawing.Size(189, 31);
             this.CostTextBox.TabIndex = 3;
             // 
             // GenreTextBox
             // 
-            this.GenreTextBox.Location = new System.Drawing.Point(253, 130);
+            this.GenreTextBox.Location = new System.Drawing.Point(242, 133);
             this.GenreTextBox.Name = "GenreTextBox";
             this.GenreTextBox.ReadOnly = true;
-            this.GenreTextBox.Size = new System.Drawing.Size(178, 31);
+            this.GenreTextBox.Size = new System.Drawing.Size(189, 31);
             this.GenreTextBox.TabIndex = 2;
             // 
             // TitleTextBox
             // 
-            this.TitleTextBox.Location = new System.Drawing.Point(253, 61);
+            this.TitleTextBox.Location = new System.Drawing.Point(242, 60);
             this.TitleTextBox.Name = "TitleTextBox";
             this.TitleTextBox.ReadOnly = true;
-            this.TitleTextBox.Size = new System.Drawing.Size(178, 31);
+            this.TitleTextBox.Size = new System.Drawing.Size(189, 31);
             this.TitleTextBox.TabIndex = 1;
             // 
             // MoviePictureBox
@@ -166,7 +167,7 @@
             // 
             this.FormTitleLabel.AutoSize = true;
             this.FormTitleLabel.Font = new System.Drawing.Font("Lucida Sans", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormTitleLabel.Location = new System.Drawing.Point(36, 9);
+            this.FormTitleLabel.Location = new System.Drawing.Point(12, 9);
             this.FormTitleLabel.Name = "FormTitleLabel";
             this.FormTitleLabel.Size = new System.Drawing.Size(314, 32);
             this.FormTitleLabel.TabIndex = 3;
@@ -174,7 +175,7 @@
             // 
             // NextButton
             // 
-            this.NextButton.Location = new System.Drawing.Point(634, 408);
+            this.NextButton.Location = new System.Drawing.Point(650, 408);
             this.NextButton.Name = "NextButton";
             this.NextButton.Size = new System.Drawing.Size(111, 37);
             this.NextButton.TabIndex = 4;
@@ -183,7 +184,7 @@
             // 
             // CancelButton
             // 
-            this.CancelButton.Location = new System.Drawing.Point(517, 408);
+            this.CancelButton.Location = new System.Drawing.Point(533, 408);
             this.CancelButton.Name = "CancelButton";
             this.CancelButton.Size = new System.Drawing.Size(111, 37);
             this.CancelButton.TabIndex = 5;

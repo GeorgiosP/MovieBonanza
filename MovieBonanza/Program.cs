@@ -6,8 +6,12 @@ using System.Windows.Forms;
 
 namespace MovieBonanza
 {
+
     static class Program
     {
+        //Create an instance of movies on program start up 
+        public static Movies info = new Movies();
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
